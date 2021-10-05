@@ -14,25 +14,63 @@ body {
   clear: both;
 }
 
-/*****************ASIDE*********************/
+/*****************NAV*********************/
 
 nav {
+  display: flex;
+  flex-direction: column;
   float: left;
   width: 250px;
   height: calc(100vh - 100px);
   background-color: black;
+  color: #fff;
 }
+
+.logo-spotify img {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  padding: 25px;
+}
+
+.img-svg {
+  width: 10%;
+  vertical-align: middle;
+  color: #a3a3a3;
+}
+
+.list {
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+.lista-1 ul li, .lista-2 ul li, .lista-3 ul li {
+  list-style: none;
+  color: #a3a3a3;
+}
+
+.lista-3 {
+  display: flex;
+}
+
+.lista-3 ul li:first-child {
+  border-bottom: 1px solid #a3a3a3;
+}
+
+/*****************MAIN*********************/
 
 main {
   float: left;
   width: calc(100vw - 250px);
   height: calc(100vh - 100px);
   background-color: #141922;
+  color: #fff;
   overflow: auto;
 }
 
+/*****************FOOTER*********************/
+
 footer {
-  float: left;
   width: 100%;
   height: 100px;
   background-color: #282828;
