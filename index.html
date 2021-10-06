@@ -16,7 +16,10 @@
 </head>
 <body>
 
+
     <div class="clearfix">
+
+      <!-- aside - left bar -->
       <nav class="aside-bar">
         <div class="logo-spotify">
           <img src="css/img/logo.svg" alt="spotify-logo">
@@ -55,6 +58,9 @@
         </div>
 
       </nav>
+      <!-- / aside - left bar -->
+
+      <!-- main menu -->
       <main>
         <section class="head-bar">
           <button>Effettua l'upgrade</button>
@@ -146,9 +152,11 @@
             </div>
           </div>
         </section>
-
       </main>
+      <!-- / main menu -->
     </div>
+
+    <!-- footer -->
     <footer>
       <div class="player-left">
         <img src="css/img/sinister.jpeg" alt="sinister-image">
@@ -161,23 +169,33 @@
       </div>
 
       <div class="player-center">
-        <ul>
-          <li>
-            <i class="fas fa-random"></i>
-          </li>
-          <li>
-            <i class="fas fa-step-backward"></i>
-          </li>
-          <li>
-            <i class="far fa-play-circle"></i>
-          </li>
-          <li>
-            <i class="fas fa-step-forward"></i>
-          </li>
-          <li>
-            <i class="fas fa-redo-alt"></i>
-          </li>
-        </ul>
+        <div class="player-center-top">
+          <ul>
+            <li>
+              <i class="fas fa-random"></i>
+            </li>
+            <li>
+              <i class="fas fa-step-backward"></i>
+            </li>
+            <li>
+              <i class="far fa-play-circle"></i>
+            </li>
+            <li>
+              <i class="fas fa-step-forward"></i>
+            </li>
+            <li>
+              <i class="fas fa-redo-alt"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class="player-center-bottom">
+          <div class="player-bar">
+            <div class="player-bar-bkg">
+              <div class="player-bar-white"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="player-right">
@@ -192,7 +210,14 @@
             <i class="fas fa-volume-up"></i>
           </li>
         </ul>
+
+        <div class="player-bar-right">
+          <div class="player-bar-bkg-right">
+            <div class="player-bar-white-right"></div>
+          </div>
+        </div>
       </div>
     </footer>
+    <!-- / footer -->
 </body>
 </html>
