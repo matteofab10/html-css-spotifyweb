@@ -182,9 +182,6 @@ main .head-bar {
 }
 
 
-
-
-
 /*****************FOOTER*********************/
 
 footer {
@@ -199,9 +196,59 @@ footer {
 
 .player-left {
   display: flex;
+  width: 250px;
 }
 
 .player-left img {
-  width: 10%;
-  vertical-align: middle;
+  width: 20%;
+  margin: 0 10px;
+}
+
+.player-left ul {
+  list-style: none;
+  padding-top: 10px;
+  margin-right: 40px;
+}
+
+.player-left ul li h6 {
+  color: #7b7e82;
+}
+
+.player-left i {
+  color: #7b7e82;
+  margin-left: 10px;
+  padding-top: 15px;
+}
+
+.player-center {
+  display: flex;
+  width: calc(100% - 500px)
+  text-align: center;
+}
+
+.player-center ul {
+  list-style: none;
+}
+
+.player-center ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.player-center ul li:nth-child(3) {
+  font-size: 25px;
+}
+
+.player-right {
+  display: flex;
+  width: 250px;
+}
+
+.player-right ul {
+  list-style: none;
+}
+
+.player-right ul li {
+  display: inline-block;
+  padding: 0 10px;
 }
