@@ -69,6 +69,7 @@ body {
 
 .lista-3 {
   display: flex;
+  overflow: hidden;
 }
 
 .lista-3 ul li:first-child {
@@ -88,10 +89,15 @@ main {
 
 main .head-bar {
   display: flex;
+  justify-content: right;
+  align-content: center;
   position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100px;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 .head-bar button {
@@ -102,9 +108,10 @@ main .head-bar {
   text-transform: uppercase;
   color: #fff;
   border: 1px solid #fff;
-  padding: 10px 50px;
+  padding: 10px 20px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.35);
+  margin: 20px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-nav {
@@ -121,12 +128,80 @@ main .head-bar {
   color: #a3a3a3;
   font-weight: bold;
   font-size: small;
+  padding: 0 15px;
 }
+
+.music-content {
+  padding: 35px 15px;
+}
+
+.music-raw {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.music-raw-title {
+  color: white;
+}
+
+.music-raw-title h6 {
+  color: #7b7e82;
+  padding-top: 10px;
+}
+
+.img-music-content {
+  display: flex;
+  margin-top: 30px;
+}
+
+.img-music-content div {
+  width: 15%;
+  padding-right: 20px;
+}
+
+.img-music-content div img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+/* .img-music-content div img:hover {
+  color: rgba(0, 0, 0, .5)
+} */
+
+.img-music-content div img.img-radius {
+  border-radius: 50%;
+}
+
+.img-music-content h4, .img-music-content h6{
+  text-align: center;
+}
+
+.img-music-content h6 {
+  color: #7b7e82;
+  padding-top: 10px;
+}
+
+
+
+
 
 /*****************FOOTER*********************/
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100px;
   background-color: #282828;
+  color: #fff;
+}
+
+.player-left {
+  display: flex;
+}
+
+.player-left img {
+  width: 10%;
+  vertical-align: middle;
 }
