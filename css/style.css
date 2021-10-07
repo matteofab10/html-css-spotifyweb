@@ -114,16 +114,16 @@ main .head-bar {
   display: flex;
   align-content: center;
   position: fixed;
+  justify-content: flex-end;
   /* top: 0;
   right: 0; */
-  width: 100%;
+  width: calc(100% - 250px);
   height: 100px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
 
 .head-bar button {
-  justify-content: flex-end;
   height: 44%;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -131,7 +131,7 @@ main .head-bar {
   border: 1px solid #fff;
   padding: 10px 30px;
   border-radius: 20px;
-  margin: 20px 15px;
+  margin: 20px 20px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -183,22 +183,42 @@ main .head-bar {
   margin-top: 30px;
 }
 
-.img-music-content div {
+.box {
   width: 15%;
   padding-right: 20px;
 }
 
-.img-music-content div img {
+.image-box {
+  position: relative;
   width: 100%;
-  padding-bottom: 10px;
+  margin-bottom: 25px;
 }
 
-/* .img-music-content div img:hover {
-  filter: opacity(.8);
-} */
+.image-box img{
+  width: 100%;
+  display: block;
+}
 
-.img-music-content div img.img-radius {
+.image-box .overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  display: none;
+  font-size: 3vw;
+}
+
+.image-box .overlay-box.radius {
   border-radius: 50%;
+}
+
+.image-box:hover .overlay-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-music-content h4, .img-music-content h6{
@@ -208,6 +228,10 @@ main .head-bar {
 .img-music-content h6 {
   color: #7b7e82;
   padding-top: 10px;
+}
+
+.image-box.radius img {
+  border-radius: 50%;
 }
 
 
@@ -344,3 +368,18 @@ footer {
   background-color: #adff2f;
   border-radius: 2px;
 }
+
+
+/****************CSS MEDIA QUERY*********************/
+
+@media screen and (max-width: 991px) {
+
+}   MEDIUM
+
+/* @media screen and (max-width: 767px) {
+
+}   SMALL */
+
+/* @media screen and (max-width: 575px) {
+
+}    X-SMALL */
