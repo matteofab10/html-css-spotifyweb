@@ -58,6 +58,7 @@ body {
 
 .lista-1 {
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .lista-1 ul li, .lista-2 ul li, .lista-3 ul li {
@@ -571,7 +572,18 @@ footer {
     padding: 5px;
   }
 
-  .lista-2 ul li, .list {
+  .lista-2 ul li, {
     display: none;
   }
+
+  .list {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 200px) {
+  main .head-bar {
+    display: none;
+  }
+  
 }
